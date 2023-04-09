@@ -3,16 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Label Overlay</title>
+  <title>eBay Image Labeler</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Image Label Overlay</h1>
-    <input type="file" id="image-input" accept="image/*">
-    <textarea id="label-input" placeholder="Enter label text"></textarea>
-    <button id="generate-btn">Generate Image</button>
-    <a id="download-link" download="output.jpg" href="#" hidden>Download Image</a>
+    <h1>eBay Image Labeler</h1>
+    <div class="file-input-wrapper">
+      <input type="file" id="image-input" accept="image/*">
+    </div>
+    <div class=""textarea-wrapper">
+      <textarea id="label-input" rows="6" placeholder="Enter label text"></textarea>
+    </div>
+    <div class="download-link-wrapper">
+      <a id="download-link" download="output.jpg" href="#" hidden>Download Labeled Image</a>
+    </div>
+    <img id="output-image" alt="Generated image" hidden>
     <canvas id="canvas" hidden></canvas>
   </div>
   <script src="app.js"></script>

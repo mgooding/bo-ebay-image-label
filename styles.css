@@ -8,6 +8,42 @@ body {
   background-color: #f0f0f0;
 }
 
+.file-input-wrapper {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+input[type="file"] {
+  display: block;
+}
+
+.textarea-wrapper {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.download-link-wrapper {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+textarea,
+img {
+  margin-bottom: 1rem;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
 .container {
   background-color: #fff;
   padding: 2rem;
