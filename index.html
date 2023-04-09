@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Label Overlay</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Label Overlay</h1>
+    <input type="file" id="image-input" accept="image/*">
+    <textarea id="label-input" placeholder="Enter label text"></textarea>
+    <button id="generate-btn">Generate Image</button>
+    <a id="download-link" download="output.jpg" href="#" hidden>Download Image</a>
+    <canvas id="canvas" hidden></canvas>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
